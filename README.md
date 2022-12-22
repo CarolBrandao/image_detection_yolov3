@@ -66,6 +66,8 @@ Trying out the `predict` endpoint you should be possible clicking "Try out" butt
 
 ![Image showing where try out button is](/docs_images/try_out.png "Try out").
 
-After that you should be able to select desired model (`yolo-v3` or `yolo-v3-tiny`), upload your image and click on `Execute`:
+After that you should be able to select desired model (`yolo-v3` or `yolo-v3-tiny`), upload your image and click on `Execute`. This is how you will get the output.
 
 ![Example of output image](/docs_images/output_example_2.png "Example of output image").
+
+Alternatively you can check out the outputs on the generated folder `images_uploaded`.
