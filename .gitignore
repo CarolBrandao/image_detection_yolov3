@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .vscode
 *.venv
+images_uploaded/
+images_with_boxes/
