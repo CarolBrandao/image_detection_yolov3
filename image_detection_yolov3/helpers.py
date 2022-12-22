@@ -1,3 +1,5 @@
+from fastapi import FastAPI
+from .endpoints import router
 from IPython.display import Image, display
 import os
 import cv2
@@ -43,3 +45,8 @@ def detect_and_draw_box(filename, model="yolov3-tiny", confidence=0.5):
     # Display the image with bounding boxes
     display(Image(f'images_with_boxes/{filename}'))
 
+def create_app():
+    # Instantiate FastAPI and include router
+    app = FastAPI(title='Deploying a ML Model with FastAPI')
+    app.include_router(router)
+    return app

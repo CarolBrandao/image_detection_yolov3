@@ -1,9 +1,7 @@
-from .helpers import detect_and_draw_box, create_dir
+from .helpers import detect_and_draw_box, create_dir, create_app
 import os
 import uvicorn
 import nest_asyncio
-from fastapi import FastAPI
-from .endpoints import router
 
 # Some example images
 image_files = [
@@ -21,9 +19,8 @@ def local():
 def start_server():
     create_dir("images_uploaded")
 
-    # Instantiate FastAPI and include router
-    app = FastAPI(title='Deploying a ML Model with FastAPI')
-    app.include_router(router)
+    # Create app
+    app = create_app()
 
     # Allows the server to be run in this interactive environment
     nest_asyncio.apply()
