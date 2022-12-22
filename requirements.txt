@@ -4,3 +4,5 @@ Pillow==8.4.0.
 tensorflow==2.7.0
 uvicorn==0.16.0
 fastapi==0.70.1
+nest-asyncio==1.5.4
+python-multipart==0.0.5

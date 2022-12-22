@@ -477,6 +477,14 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "nest-asyncio"
+version = "1.5.4"
+description = "Patch asyncio to allow nested event loops"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
 name = "numpy"
 version = "1.24.0"
 description = "Fundamental package for array computing in Python"
@@ -717,6 +725,17 @@ wcwidth = "*"
 [package.extras]
 checkqa-mypy = ["mypy (==v0.761)"]
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
+
+[[package]]
+name = "python-multipart"
+version = "0.0.5"
+description = "A streaming multipart parser for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = ">=1.4.0"
 
 [[package]]
 name = "requests"
@@ -1003,7 +1022,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.12"
-content-hash = "a3475a85b051c0db60d5c160b65a30f905f660b1e98c76d45f768b1ff0ab177e"
+content-hash = "20e44a65a5e09e8a51e63669638e6fc8d1f77bc0fb34fee826189e06b1412deb"
 
 [metadata.files]
 absl-py = []
@@ -1045,6 +1064,7 @@ markdown = []
 markupsafe = []
 matplotlib-inline = []
 more-itertools = []
+nest-asyncio = []
 numpy = []
 oauthlib = []
 opencv-python = []
@@ -1067,6 +1087,7 @@ pyasn1-modules = []
 pydantic = []
 pygments = []
 pytest = []
+python-multipart = []
 requests = []
 requests-oauthlib = []
 rsa = []
